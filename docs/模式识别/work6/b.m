@@ -232,7 +232,7 @@ function L = knn_laplacian(X, k)
   L = D - W;
 end
 
-k = 11 ;
+k = 3 ;
 
 % 先使用k近邻计算出矩阵
 L = knn_laplacian(X, k) ;
@@ -282,7 +282,7 @@ end
 
 % 设置聚类个数
 k = 2
-mus = [Y(1, :); Y(100, :)] ;
+mus = [Y(1, :); Y(101, :)] ;
 
 points = Y ;
 epsilon = 0.00001 ;
